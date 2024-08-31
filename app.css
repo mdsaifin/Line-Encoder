@@ -1,0 +1,140 @@
+/* Line encoder Project
+By MD Saif */
+
+/* Base styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navigation */
+#mainNav {
+    background-color: #1f1f1f;
+    color: #48cae4;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #48cae4;
+}
+
+#line {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+/* Section Styling */
+.encode {
+    margin-bottom: 100px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navAll {
+    font-size: 2em;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #292929;
+    color: #48cae4;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+/* Choice Styling */
+.choice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.randfix {
+    flex: 1 1 300px;
+    color: #ff8fab;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    text-decoration: underline;
+    margin-bottom: 10px;
+    color: #48cae4;
+}
+
+.ip {
+    font-family: 'Poppins', sans-serif;
+    height: 40px;
+    font-size: 1em;
+    text-align: center;
+    border: 2px solid #ff8fab;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: rgba(72, 202, 228, 0.2);
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.gen {
+    border: none;
+    color: #ffffff;
+    background-color: #e76586;
+    height: 45px;
+    margin-top: 10px;
+    font-size: 1.2em;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.gen:hover {
+    background-color: #ff8fab;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #line {
+        font-size: 2.5em;
+    }
+
+    .navAll {
+        font-size: 1.5em;
+    }
+
+    .randfix {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #line {
+        font-size: 2em;
+    }
+
+    .navAll {
+        font-size: 1.2em;
+        padding: 15px 0;
+    }
+
+    .choice {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gen {
+        font-size: 1em;
+    }
+
+    .ip {
+        font-size: 0.9em;
+    }
+}
